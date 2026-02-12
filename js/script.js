@@ -71,28 +71,6 @@
     });
   };
 
-  /* ANIMASI SCROLL UNTUK ELEMEN */
-  const animateOnScroll = () => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("fade-in");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0.15,
-      },
-    );
-
-    const elements = document.querySelectorAll(
-      ".about-card, .feature-card, .stat-item",
-    );
-    elements.forEach((el) => observer.observe(el));
-  };
-
   /* HANDLER UTAMA UNTUK SCROLL EVENT */
   const handleScroll = () => {
     handleNavbarScroll();

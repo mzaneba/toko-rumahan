@@ -233,7 +233,6 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
-
 .stat-number {
   font-size: 2.5rem;
   font-weight: 800;
@@ -255,11 +254,6 @@ body {
   border-radius: var(--border-radius);
   overflow: hidden;
   transition: var(--transition);
-}
-
-.about-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15) !important;
 }
 
 .section-badge {
@@ -327,7 +321,6 @@ body {
   object-position: center;
 }
 
-
 /* FEATURE SECTION */
 .features-section {
   background: linear-gradient(180deg, #fff 0%, #f8f9fa 100%);
@@ -351,7 +344,6 @@ body {
   color: white;
   margin-bottom: 1.5rem;
 }
-
 
 .bg-gradient-1 {
   background: var(--gradient-1);
@@ -509,24 +501,6 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 8px 30px rgba(13, 110, 253, 0.6);
 }
-
-/* ANIMASI */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fade-in {
-  animation: fadeInUp 0.8s ease both;
-}
-
-/* RESPONSIVE DESIGN */
 
 /* Tablet */
 @media (max-width: 992px) {

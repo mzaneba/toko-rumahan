@@ -1,34 +1,6 @@
 (function () {
   "use strict";
 
-  /* ANIMASI SCROLL REVEAL */
-  const animateOnScroll = () => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("fade-in");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px",
-      },
-    );
-
-    const elements = document.querySelectorAll(
-      ".timeline-item, .vm-card, .advantage-card, .gallery-item",
-    );
-
-    elements.forEach((el) => {
-      el.style.opacity = "0";
-      el.style.transform = "translateY(30px)";
-      observer.observe(el);
-    });
-  };
-
   /* GALERI LIGHTBOX EFFECT */
   const initGallery = () => {
     const galleryItems = document.querySelectorAll(".gallery-item");
@@ -64,7 +36,6 @@
 
   /* INISIALISASI SEMUA FUNGSI */
   const init = () => {
-    animateOnScroll();
     initGallery();
     animateCounters();
     initHoverEffects();
