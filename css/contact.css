@@ -1,0 +1,235 @@
+/* Header */
+.page-header {
+  padding: 5rem 0 4rem;
+  background: linear-gradient(180deg, #f8f9fa 0%, #fff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* card info contact */
+.contact-info {
+  background: #fff;
+}
+
+.info-card {
+  background: white;
+  border-radius: var(--border-radius);
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: var(--transition);
+  height: 100%;
+  text-align: center;
+}
+
+.info-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.info-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: white;
+  margin: 0 auto 1.5rem;
+}
+
+.info-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.info-text {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.info-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+}
+
+.info-link:hover {
+  color: var(--primary-dark);
+  transform: translateX(5px);
+}
+
+.info-note {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.phone-number {
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Schedule */
+.schedule-list {
+  margin: 1rem 0;
+}
+
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.schedule-item:last-child {
+  border-bottom: none;
+}
+
+.schedule-item .day {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.schedule-item .time {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Map */
+.map-section {
+  position: relative;
+}
+
+.map-container {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* FAQ */
+.faq-section {
+  position: relative;
+}
+
+.accordion-item {
+  border: none;
+  margin-bottom: 1rem;
+  border-radius: var(--border-radius) !important;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.accordion-button {
+  background: white;
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 1.25rem 1.5rem;
+  border: none;
+  transition: var(--transition);
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--gradient-primary);
+  color: white;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) i {
+  color: white;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230d6efd'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-body {
+  padding: 1.5rem;
+  background: white;
+  color: var(--text-muted);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page-header {
+    padding: 3rem 0 2rem;
+  }
+
+  .info-card {
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .info-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+
+  .contact-form-card {
+    padding: 2rem;
+  }
+
+  .map-container iframe {
+    height: 350px !important;
+  }
+
+  .accordion-button {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .accordion-body {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .schedule-item {
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: center;
+  }
+
+  .info-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.75rem;
+  }
+
+  .map-container iframe {
+    height: 300px !important;
+  }
+}
