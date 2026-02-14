@@ -1,10 +1,7 @@
-/* PRODUCTS PAGE SCRIPT
-   Filter & Search Functionality */
-
 (function () {
   "use strict";
 
-  /* FILTER KATEGORI PRODUK */
+  /* filter kategori produk */
   const filterProducts = () => {
     const filterBtns = document.querySelectorAll(".filter-btn");
     const productItems = document.querySelectorAll(".product-item");
@@ -36,7 +33,7 @@
     });
   };
 
-  /* SEARCH / PENCARIAN PRODUK */
+  /* pencarian produk */
   const searchProducts = () => {
     const searchInput = document.getElementById("searchInput");
     const productItems = document.querySelectorAll(".product-item");
@@ -69,7 +66,7 @@
     });
   };
 
-  /* INISIALISASI */
+  /* inisialisasi */
   const init = () => {
     filterProducts();
     searchProducts();
@@ -77,7 +74,7 @@
     console.log("Products page - Filter & Search ready!");
   };
 
-  /* JALANKAN SAAT DOM READY */
+  /* jalankan saat ready */
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
   } else {

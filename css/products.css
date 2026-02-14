@@ -1,4 +1,4 @@
-/* PRODUCTS PAGE CSS */
+/* header */
 .page-header {
   padding: 5rem 0 4rem;
   background: linear-gradient(180deg, #f8f9fa 0%, #fff 100%);
@@ -45,7 +45,7 @@
   max-width: 600px;
 }
 
-/* Category Card */
+/* category card */
 .category-card {
   background: white;
   border-radius: var(--border-radius);
@@ -114,7 +114,7 @@
   padding: 2rem;
 }
 
-/* Product List */
+/* product list */
 .product-list {
   list-style: none;
   padding: 0;
@@ -145,7 +145,7 @@
   line-height: 1.6;
 }
 
-/* Responsive */
+/* responsive */
 @media (max-width: 768px) {
   .page-header {
     padding: 5rem 0 3rem;

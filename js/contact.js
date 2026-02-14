@@ -1,8 +1,7 @@
-/* CONTACT PAGE SCRIPT */
 (function () {
   "use strict";
 
-  /* VALIDASI NOMOR HP */
+  /* validasi nomor hp */
   const validatePhoneNumber = () => {
     const phoneInput = document.getElementById("phone");
 
@@ -16,7 +15,7 @@
     });
   };
 
-  /* ANIMASI SCROLL REVEAL */
+  /* animasi scroll */
   const animateOnScroll = () => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -44,7 +43,7 @@
     });
   };
 
-  /* SMOOTH SCROLL KE FORM */
+  /* smooth scroll ke form */
   const initScrollToForm = () => {
     if (window.location.hash === "#contact") {
       const formSection = document.querySelector(".contact-form-section");
@@ -56,7 +55,7 @@
     }
   };
 
-  /* GOOGLE MAPS INTERACTION */
+  /* google maps interaction */
   const initMapInteraction = () => {
     const mapContainer = document.querySelector(".map-container");
 
@@ -77,7 +76,7 @@
     }
   };
 
-  /* FAQ ACCORDION TRACKING */
+  /* faq accordion tracking */
   const trackAccordionClicks = () => {
     const accordionButtons = document.querySelectorAll(".accordion-button");
 
@@ -89,7 +88,7 @@
     });
   };
 
-  /* INISIALISASI SEMUA FUNGSI */
+  /* inisialisasi semua fungsi */
   const init = () => {
     handleContactForm();
     validatePhoneNumber();
@@ -101,7 +100,7 @@
     console.log("Contact page - Form & interactions ready!");
   };
 
-  /* JALANKAN SAAT DOM READY */
+  /* jalankan saat ready */
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
   } else {

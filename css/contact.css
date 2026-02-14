@@ -1,4 +1,4 @@
-/* Header */
+/* header */
 .page-header {
   padding: 5rem 0 4rem;
   background: linear-gradient(180deg, #f8f9fa 0%, #fff 100%);
@@ -73,7 +73,7 @@
   margin: 0;
 }
 
-/* Schedule */
+/* schedule */
 .schedule-list {
   margin: 1rem 0;
 }
@@ -99,7 +99,7 @@
   font-weight: 600;
 }
 
-/* Map */
+/* map */
 .map-section {
   position: relative;
 }
@@ -110,7 +110,7 @@
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 }
 
-/* FAQ */
+/* faq */
 .faq-section {
   position: relative;
 }
@@ -174,7 +174,7 @@
   }
 }
 
-/* Responsive */
+/* responsive */
 @media (max-width: 768px) {
   .page-header {
     padding: 3rem 0 2rem;

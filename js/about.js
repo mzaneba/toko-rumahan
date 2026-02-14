@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  /* GALERI LIGHTBOX EFFECT */
+  /* galeri lightbox effect */
   const initGallery = () => {
     const galleryItems = document.querySelectorAll(".gallery-item");
 
@@ -14,7 +14,6 @@
           caption ? caption.textContent : "Image",
         );
 
-        // Animasi klik
         this.style.transform = "scale(0.95)";
         setTimeout(() => {
           this.style.transform = "";
@@ -23,7 +22,7 @@
     });
   };
 
-  /* SMOOTH HOVER EFFECT */
+  /* smooth hoover efect */
   const initHoverEffects = () => {
     const cards = document.querySelectorAll(
       ".advantage-card, .vm-card, .gallery-item",
@@ -34,7 +33,7 @@
     });
   };
 
-  /* INISIALISASI SEMUA FUNGSI */
+  /* inisialisasi semua fungsi */
   const init = () => {
     initGallery();
     animateCounters();
@@ -43,7 +42,7 @@
     console.log("About page - Animations & interactions ready!");
   };
 
-  /* JALANKAN SAAT DOM READY */
+  /* jalankan saat ready */
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
   } else {

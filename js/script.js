@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  /* FUNGSI UNTUK SCROLL NAVBAR */
+  /* fungsi sccroll navbar */
   const handleNavbarScroll = () => {
     const navbar = document.querySelector(".navbar");
     const currentScroll = window.pageYOffset;
@@ -12,17 +12,19 @@
     }
   };
 
-  /* FUNGSI UNTUK SCROLL BUTTON */
+  /* fungsi scroll button */
   const handleScrollTopBtn = () => {
     const scrollTopBtn = document.getElementById("scrollTopBtn");
-    if (window.pageYOffset > 300) {
-      scrollTopBtn.classList.add("visible");
-    } else {
-      scrollTopBtn.classList.remove("visible");
+    if (scrollTopBtn) {
+      if (window.pageYOffset > 300) {
+        scrollTopBtn.classList.add("visible");
+      } else {
+        scrollTopBtn.classList.remove("visible");
+      }
     }
   };
 
-  /* INISIALISASI SCROLL BUTTON */
+  /* inisialisai scroll button */
   const initScrollTopBtn = () => {
     const scrollTopBtn = document.getElementById("scrollTopBtn");
 
@@ -36,7 +38,7 @@
     }
   };
 
-  /* AUTO CLOSE NAVBAR (MOBILE) */
+  /* auto close navbar pada mobile */
   const autoCloseNavbar = () => {
     const navLinks = document.querySelectorAll(".nav-link");
     const navbarToggler = document.querySelector(".navbar-toggler");
@@ -53,7 +55,7 @@
     });
   };
 
-  /* SET ACTIVE LINK NAVBAR */
+  /* set active link navbar */
   const setActiveNavLink = () => {
     const currentPage =
       window.location.pathname.split("/").pop() || "index.html";
@@ -71,13 +73,16 @@
     });
   };
 
-  /* HANDLER UTAMA UNTUK SCROLL EVENT */
+  /* animasi saat scroll */
+  const animateOnScroll = () => {};
+
+  /* handler utama scroll */
   const handleScroll = () => {
     handleNavbarScroll();
     handleScrollTopBtn();
   };
 
-  /* INISIALISASI SEMUA FUNGSI */
+  /* inisialisasi fungsi */
   const init = () => {
     setActiveNavLink();
     initScrollTopBtn();
@@ -88,7 +93,7 @@
     console.log("Toko Zaneba - Website berhasil dimuat!");
   };
 
-  /* JALANKAN SAAT DOM READY */
+  /* jalankan saat ready */
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
   } else {
